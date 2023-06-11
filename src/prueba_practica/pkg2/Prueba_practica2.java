@@ -28,9 +28,9 @@ public class Prueba_practica2 {
             System.out.println("2)Rectangulo");
             System.out.println("3)Cuadrado");
             System.out.println("4)Salir");
-            int opt = entrada.nextInt();
+            int opc = entrada.nextInt();
 
-            switch (opt) {
+            switch (opc) {
                 case 1: {
 
                     System.out.println("Calculando el area....");
@@ -41,13 +41,13 @@ public class Prueba_practica2 {
 
                     Figura datos = new Figura(largo, 0, alto);
 
-                    System.out.println("El area es: " + datos.area(largo, 0, alto, opt));
+                    System.out.println("El area es: " + datos.area(largo, 0, alto, opc));
 
                     System.out.println("Calculando volumen (Piramide)....");
 
-                    System.out.println("El volumen es: " + datos.volumen(largo, 0, alto, opt));
+                    System.out.println("El volumen es: " + datos.volumen(largo, 0, alto, opc));
 
-                    Figuras.add(opt + " Triangulo ;" + "Area: " + datos.area(largo, alto, alto, opt) + " Volumen: " + datos.volumen(largo, alto, alto, opt));
+                    Figuras.add(opc + " Triangulo ;" + "Area: " + datos.area(largo, alto, alto, opc) + " Volumen: " + datos.volumen(largo, alto, alto, opc));
                     break;
 
                 }
@@ -61,13 +61,13 @@ public class Prueba_practica2 {
 
                     Figura datos = new Figura(largo, 0, alto);
 
-                    System.out.println("El area es: " + datos.area(largo, alto, alto, opt));
+                    System.out.println("El area es: " + datos.area(largo, alto, alto, opc));
                     System.out.println("Calculando volumen (Prisma Rectangular)....");
                     System.out.println("Ingrese el ancho del prisma: ");
                     double ancho = entrada.nextDouble();
 
-                    System.out.println("El volumen es: " + datos.volumen(largo, ancho, alto, opt));
-                    Figuras.add(opt + " Rectangulo; Area: " + datos.area(largo, ancho, alto, opt) + " Volumen: " + datos.volumen(largo, ancho, alto, opt));
+                    System.out.println("El volumen es: " + datos.volumen(largo, ancho, alto, opc));
+                    Figuras.add(opc + " Rectangulo; Area: " + datos.area(largo, ancho, alto, opc) + " Volumen: " + datos.volumen(largo, ancho, alto, opc));
 
                     break;
                 }
@@ -79,13 +79,13 @@ public class Prueba_practica2 {
 
                     Figura datos = new Figura(largo, 0, largo);
 
-                    System.out.println("El area es: " + datos.area(largo, largo, largo, opt));
+                    System.out.println("El area es: " + datos.area(largo, largo, largo, opc));
                     System.out.println("Calculando volumen (Cubo)....");
                     System.out.println("Ingrese el ancho: ");
                     double ancho = entrada.nextDouble();
-                    System.out.println("El volumen es: " + datos.volumen(largo, ancho, largo, opt));
+                    System.out.println("El volumen es: " + datos.volumen(largo, ancho, largo, opc));
 
-                    Figuras.add(opt + " Cuadrado; Area: " + datos.area(largo, ancho, ancho, opt) + " Volumen: " + datos.volumen(largo, ancho, largo, opt));
+                    Figuras.add(opc + " Cuadrado; Area: " + datos.area(largo, ancho, ancho, opc) + " Volumen: " + datos.volumen(largo, ancho, largo, opc));
                     break;
                 }
                 case 4: {
